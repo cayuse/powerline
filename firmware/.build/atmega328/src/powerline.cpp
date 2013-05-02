@@ -1,3 +1,9 @@
+#include <Arduino.h>
+void flashLed(int pin, int times, int wait);
+void toggleLed();
+void setup();
+void loop();
+#line 1 "src/powerline.ino"
 
 #include <Stream.h>
 #include <stdio.h>

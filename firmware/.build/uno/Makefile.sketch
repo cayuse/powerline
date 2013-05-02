@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/powerline.cpp : src/powerline.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/powerline.ino[0m
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/powerline.cpp
+	@true
+
